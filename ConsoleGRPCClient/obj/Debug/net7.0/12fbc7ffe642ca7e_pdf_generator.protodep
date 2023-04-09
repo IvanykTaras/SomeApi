@@ -1,0 +1,3 @@
+obj\Debug\net7.0\Protos/PdfGenerator.cs \
+obj\Debug\net7.0\Protos/PdfGeneratorGrpc.cs: C:/Users/Khrystyna Ivanyk/.nuget/packages/grpc.tools/2.52.0/build/native/include/google/protobuf/timestamp.proto\
+ Protos/pdf_generator.proto

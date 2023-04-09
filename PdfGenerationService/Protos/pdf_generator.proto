@@ -1,0 +1,18 @@
+syntax = "proto3";
+option csharp_namespace = "PdfGenerationService";
+import "google/protobuf/timestamp.proto";
+package pdf_generator;
+
+service PdfGenerator {
+  rpc Generate (HtmlDocumentRequest)  returns (PdfDocumentResponse);
+}
+
+message HtmlDocumentRequest {
+  string content = 1;
+  string name = 2;
+}
+
+message PdfDocumentResponse {
+  bytes  content = 1;
+  google.protobuf.Timestamp created = 2;
+}
